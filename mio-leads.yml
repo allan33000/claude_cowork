@@ -1,0 +1,46 @@
+name: Mio - Leads quotidiens
+
+on:
+  schedule:
+    # 08:07 UTC = 10:07 Paris en ete (CEST) / 09:07 Paris en hiver (CET)
+    # decale de l'heure pile pour eviter les ralentissements GitHub aux heures de pointe
+    - cron: "7 8 * * 1-5"
+  workflow_dispatch: {}   # bouton "Run workflow" pour tester manuellement
+
+permissions:
+  contents: write   # necessaire pour committer le fichier de leads du jour
+
+jobs:
+  build-leads:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dependances
+        run: pip install requests
+
+      - name: Generer les leads du jour
+        env:
+          FRANCETRAVAIL_CLIENT_ID: ${{ secrets.FRANCETRAVAIL_CLIENT_ID }}
+          FRANCETRAVAIL_CLIENT_SECRET: ${{ secrets.FRANCETRAVAIL_CLIENT_SECRET }}
+        run: python daily_leads.py
+
+      - name: Committer le resultat
+        # Ce commit sert aussi a garder le repo "actif": GitHub desactive
+        # silencieusement les workflows planifies apres 60 jours sans activite.
+        run: |
+          git config user.name "mio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add leads/
+          git diff --cached --quiet && echo "Rien de nouveau" || git commit -m "Leads du $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Signaler un echec
+        if: failure()
+        run: echo "::error::Le pipeline de leads Mio a echoue - voir les logs ci-dessus."
