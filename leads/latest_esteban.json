@@ -1,5 +1,45 @@
 {
-  "date_utc": "2026-10-27T16:47:39.136348+00:00",
+  "date_utc": "2026-10-28T17:22:27.119423+00:00",
   "recipient": "esteban",
-  "leads": []
+  "leads": [
+    {
+      "entreprise": "Janer Consulting",
+      "siren": "837750066",
+      "naf": "70.22Z",
+      "effectif": "NN",
+      "declencheur": "Assistant / Assistante export (H/F)",
+      "date_offre": "2026-10-28T03:44:47.366Z",
+      "lieu": "78 - Pecq",
+      "url_offre": "https://candidat.francetravail.fr/offres/recherche/detail/8311244",
+      "contact_probable": "CAROLINE ROBERTE JEANNINE BARRAT",
+      "linkedin_search_url": "https://www.google.com/search?q=%22CAROLINE%20ROBERTE%20JEANNINE%20BARRAT%22%20%22Janer%20Consulting%22%20site%3Alinkedin.com/in",
+      "note_prospection": "Bonjour CAROLINE ROBERTE JEANNINE,\n\nJ'ai vu que Janer Consulting recrute actuellement sur un poste lie a l'export (Assistant / Assistante export (H/F)) — signe que votre developpement a l'international s'accelere.\n\nMio aide les PME francaises a structurer cette phase (conformite, volet commercial, suivi), pour eviter que ce genre de recrutement absorbe tout le temps de l'equipe. Ouvert a un echange de 15 minutes cette semaine ?\n\n[Ton prenom]"
+    },
+    {
+      "entreprise": "EURIDIS",
+      "siren": "931464812",
+      "naf": "46.90Z",
+      "effectif": "NN",
+      "declencheur": "Assistant / Assistante export (H/F)",
+      "date_offre": "2026-10-28T03:43:36.627Z",
+      "lieu": "69 - Lyon 5e Arrondissement",
+      "url_offre": "https://candidat.francetravail.fr/offres/recherche/detail/8310990",
+      "contact_probable": "NATHALIE SYLVIE MARTINIE",
+      "linkedin_search_url": "https://www.google.com/search?q=%22NATHALIE%20SYLVIE%20MARTINIE%22%20%22EURIDIS%22%20site%3Alinkedin.com/in",
+      "note_prospection": "Bonjour NATHALIE SYLVIE,\n\nJ'ai vu que EURIDIS recrute actuellement sur un poste lie a l'export (Assistant / Assistante export (H/F)) — signe que votre developpement a l'international s'accelere.\n\nMio aide les PME francaises a structurer cette phase (conformite, volet commercial, suivi), pour eviter que ce genre de recrutement absorbe tout le temps de l'equipe. Ouvert a un echange de 15 minutes cette semaine ?\n\n[Ton prenom]"
+    },
+    {
+      "entreprise": "ARTUS INTERIM",
+      "siren": "448805333",
+      "naf": "78.20Z",
+      "effectif": "11",
+      "declencheur": "Assistant / Assistante export (H/F)",
+      "date_offre": "2026-10-23T03:25:11.954Z",
+      "lieu": "72 - Tuffé Val de la Chéronne",
+      "url_offre": "https://candidat.francetravail.fr/offres/recherche/detail/8171799",
+      "contact_probable": "dirigeant non identifie",
+      "linkedin_search_url": "https://www.google.com/search?q=%22ARTUS%20INTERIM%22%20export%20site%3Alinkedin.com/in",
+      "note_prospection": "Bonjour ,\n\nJ'ai vu que ARTUS INTERIM recrute actuellement sur un poste lie a l'export (Assistant / Assistante export (H/F)) — signe que votre developpement a l'international s'accelere.\n\nMio aide les PME francaises a structurer cette phase (conformite, volet commercial, suivi), pour eviter que ce genre de recrutement absorbe tout le temps de l'equipe. Ouvert a un echange de 15 minutes cette semaine ?\n\n[Ton prenom]"
+    }
+  ]
 }
